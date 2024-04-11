@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+
+    <!-- HEADER**************************************************************** -->
+    <header>
+        <div class="logo">
+            <img src="ressources/images/logo.png" alt="logo Freshly restaurant">
+            <h1> FRESHLY RESTAURANT </h1>
+        </div>
+
+        <nav>
+            <a href="http://127.0.0.1:5500/23012024/PROJET%20FreshlyRestaurant-Mohamed%20BELALIA/home.html">Home</a>
+            <a href="http://127.0.0.1:5500/23012024/PROJET%20FreshlyRestaurant-Mohamed%20BELALIA/About.html">About</a>
+            <a href="http://127.0.0.1:5500/23012024/PROJET%20FreshlyRestaurant-Mohamed%20BELALIA/menu.html">Menus</a>
+            <a href="http://127.0.0.1:5500/23012024/PROJET%20FreshlyRestaurant-Mohamed%20BELALIA/contact.html">Contact</a>
+
+        </nav>
+    </header>
+
+    <!-- MAIN********************************************************************* -->
+
+    <main>
+
+        <div class="menus">
+            <h2>Details of our menus</h2>
+            <p>Choose your main course according to your menu !</p>
+        </div>
+
+        <ul id="filters" class="clearfix">
+            <li><span class="filter active" data-filter=".ALL, .MEAT, .VEGAN, .FISH, .HALAL">ALL</span></li>
+            <li><span class="filter" data-filter=".MEAT">MEAT</span></li>
+            <li><span class="filter" data-filter=".VEGAN">VEGAN</span></li>
+            <li><span class="filter" data-filter=".FISH">FISH</span></li>
+        </ul>
+
+
+    <div class="container">
+
+        <div class="gallerie-menu">
+            <figure class="menu1">
+
+            <div class="mix VEGAN" data-order="1">
+            <img src="ressources/menus/vegan-01.jpg" alt="Mixed vegetables">
+            </div>
+
+
+            <div class="mix FISH" data-order="1">
+            <img src="ressources/menus/fish-01.jpg" alt="Grilled mussels">
+            </div>
+
+            <div class="mix MEAT" data-order="1">
+            <img src="ressources/menus/meat-01.jpg" alt="Freshly kebabs">
+            </div>
+            </figure>
+
+            <figure class="menu2">
+            <div class="mix FISH" data-order="1">
+            <img src="ressources/menus/fish-02.jpg" alt="Cajun shrimp">
+            </div>
+
+            <div class="mix MEAT" data-order="1">
+            <img src="ressources/menus/meat-02.jpg" alt="Freshly burger">
+            </div>
+            
+
+
+            <div class="mix VEGAN" data-order="1">
+            <img src="ressources/menus/vegan-02.jpg" alt="Grilled eggplants">
+            </div>
+            </figure>
+
+            <figure class="menu3">
+            <div class="mix MEAT" data-order="1">
+            <img src="ressources/menus/meat-03.jpg" alt="Beef stew with pasta">
+            </div>
+
+            <div class="mix FISH" data-order="1">
+            <img src="ressources/menus/fish-03.jpg" alt="Grilled salmon">
+            </div>
+
+            <div class="mix VEGAN" data-order="1">
+            <img src="ressources/menus/vegan-03.jpg" alt="Vegetable Jambalaya">
+            </div>
+            </figure>
+        </div>
+    
+    </div>
+
+        <div>
+            <h2>Deserts</h2>
+            <p>Here are the deserts you can choose to finish your meal (included in your menu).</p>
+        </div>
+
+        <div class="gallerie-desert">
+            <figure class="desert">
+                <img src="ressources/menus/desert-01.jpg" alt="Tiramisu">
+                <img src="ressources/menus/desert-02.jpg" alt="Freshly Pancakes">
+                <img src="ressources/menus/desert-03.jpg" alt="Redberries cup">
+            </figure>
+        </div>
+
+        <div>
+            <h2>Cocktails</h2>
+            <p>Soft drinkgs are included, but if you want you can order one of our excellent cocktails (not included in the menu).</p>
+        </div>
+
+        <div class="gelerie-cokctail">
+
+            <figure class="cocktail">
+                <img src="ressources/menus/drink-01.jpg" alt="Winter Whiskey">
+                <img src="ressources/menus/drink-02.jpg" alt="Paloma cocktail">
+                <img src="ressources/menus/drink-03.jpg" alt="Bellini cocktail">
+            </figure>
+        </div>
+
+    
+    </main>
+       
+    <!-- FOOTER******************************************************************* -->
+    
+    <footer>
+
+        <div class="info">
+
+            <div class="hours">
+                <h3>Opening hours</h3>
+                <p>Monday:Closed</p>
+                <p>Tue-Wed : 9am - 10pm</p>
+                <p>Thu-Fri : 9am - 10pm</p>
+                <p>Sat-Sun : 5pm - 10pm</p>
+            </div>
+
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>13 Christopher Street</p>
+                <p>New York,</p>
+                <p>NY 10014-3543</p>
+                <p>+01 2000 800 9999</p>
+            </div>
+
+            <div class="social-networks">
+                <h3>social networks</h3>
+                <div class="social">
+                <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-pinterest-p" style="color: #ffffff;"></i>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="patrickkunka-mixitup-61dac05/dist/mixitup.min.js"></script>
+    <script>
+        var mixer = mixitup('.container');
+        mixer.filter('.mix')
+    </script> 
+</body>
+
+</html>
